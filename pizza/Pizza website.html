@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SILKOS</title>
-    <link rel="stylesheet" href="css/Pizza website.css" />
+    <!-- <link rel="stylesheet" href="css/Pizza website.css" /> -->
+     <link rel="stylesheet" href="css/Pizza-website.css" />
+
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
@@ -18,53 +20,54 @@
     />
   </head>
   <body>
-    <!-- header section -->
     <header>
-      <a href="#" class="logo"
-        ><img
-          src="https://silkospizzeria.se/stores/149/images/logo-main/80p.png"alt="logo"
-      /></a>
-      <ul class="navbar">
+      <a href="#" class="logo-link">
+        <img
+          src="https://silkospizzeria.se/stores/149/images/logo-main/80p.png"
+          alt="logo"
+        />
+      </a>
+      <ul class="menu-list">
         <li><a href="pizza2.html">Hem</a></li>
         <li><a href="#about">Om</a></li>
         <li><a href="#menu">Menu</a></li>
         <li><a href="#contact">Kontakta</a></li>
       </ul>
 
-      <div class="h-icons">
+      <div class="header-icons">
         <a href="#"><i class="bx bx-search"></i></a>
         <a href="#"><i class="bx bx-cart"></i></a>
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="menu-btn" id="menu-icon"></div>
       </div>
     </header>
-    <!-- hem section -->
-    <section class="home" id="home">
-      <div class="home-text">
+
+    <section class="home-section" id="home">
+      <div class="home-left">
         <h1><span>Välkommen </span>till världen av god och färsk pizza</h1>
         <p>
           Välkommen till Silkos Pizzeria, där vi erbjuder läckra och färska
           pizzor tillagad med de bästa ingredienserna. <br />
           Utforska vår meny och upptäck dina nya favoriter!
         </p>
-        <a href="pizza2.html" class="btn">Välj en pizza</a>
+        <a href="pizza2.html" class="btn-main">Välj en pizza</a>
       </div>
 
-      <div class="home-img">
+      <div class="home-right">
         <img src="img/home.png" alt="home" />
       </div>
     </section>
-    <!-- reviews section -->
-    <section class="container">
-      <div class="main-text">
+
+    <section class="reviews-section">
+      <div class="title-area">
         <h2>Reviews</h2>
         <p>Kunder Reviews</p>
       </div>
-      <div class="container-box">
-        <div class="c-mainbox">
-          <div class="container-img">
+      <div class="reviews-wrapper">
+        <div class="review-card">
+          <div class="review-img">
             <img src="img/image1.jpeg" alt="Review 1" />
           </div>
-          <div class="container-text">
+          <div class="review-text">
             <h1>Johan Svensson</h1>
             <p>
               "Fantastisk pizza! Den bästa jag någonsin har smakat. Kommer
@@ -73,11 +76,11 @@
           </div>
         </div>
 
-        <div class="c-mainbox">
-          <div class="container-img">
+        <div class="review-card">
+          <div class="review-img">
             <img src="img/image2.jpeg" alt="Review 2" />
           </div>
-          <div class="container-text">
+          <div class="review-text">
             <h1>Anna Eriksson</h1>
             <p>
               "Supergod pizza och fantastisk service! Jag älskar deras
@@ -86,11 +89,11 @@
           </div>
         </div>
 
-        <div class="c-mainbox">
-          <div class="container-img">
+        <div class="review-card">
+          <div class="review-img">
             <img src="img/image3.jpeg" alt="Review 3" />
           </div>
-          <div class="container-text">
+          <div class="review-text">
             <h1>Max Persson</h1>
             <p>
               "Så god pizza och en riktigt trevlig atmosfär! Rekommenderar
@@ -99,11 +102,11 @@
           </div>
         </div>
 
-        <div class="c-mainbox">
-          <div class="container-img">
+        <div class="review-card">
+          <div class="review-img">
             <img src="img/image4.jpeg" alt="Review 4" />
           </div>
-          <div class="container-text">
+          <div class="review-text">
             <h1>Erik Johansson</h1>
             <p>
               "Hög kvalitet och fantastiska smaker! Min nya favoritpizzeria!"
@@ -113,13 +116,12 @@
       </div>
     </section>
 
-    <!-- om section -->
-    <section class="about" id="about">
-      <div class="about-img">
+    <section class="about-section" id="about">
+      <div class="about-left">
         <img src="img/a.png" alt="" />
       </div>
 
-      <div class="about-text">
+      <div class="about-right">
         <h2>
           Den utsökta maten<br />
           För den goda humör
@@ -130,14 +132,12 @@
           Vårt team använder endast färska ingredienser av högsta kvalitet för
           att säkerställa att varje bit är en smakupplevelse.
         </p>
-        <a href="#" class="btn">Välj en pizza</a>
+        <a href="#" class="btn-main">Välj en pizza</a>
       </div>
     </section>
 
-    <!-- menu section -->
-
-    <section class="menu" id="menu">
-      <div class="main-text">
+    <section class="menu-section" id="menu">
+      <div class="title-area">
         <h2>Mest populära Pizza</h2>
         <p>
           Vi har valt åt dig<br />
@@ -145,14 +145,14 @@
         </p>
       </div>
 
-      <div class="menu-content">
-        <div class="row">
+      <div class="menu-listing">
+        <div class="menu-item">
           <img src="img/m1.jpg" alt="main-product1" />
           <div class="menu-text">
-            <div class="menu-left">
+            <div class="menu-name">
               <h4>Margarita</h4>
             </div>
-            <div class="menu-right">
+            <div class="menu-price">
               <h5>135 sek</h5>
             </div>
           </div>
@@ -162,13 +162,13 @@
           </p>
         </div>
 
-        <div class="row">
+        <div class="menu-item">
           <img src="img/m2.jpg" alt="main-product2" />
           <div class="menu-text">
-            <div class="menu-left">
+            <div class="menu-name">
               <h4>Montanara</h4>
             </div>
-            <div class="menu-right">
+            <div class="menu-price">
               <h5>135 sek</h5>
             </div>
           </div>
@@ -178,13 +178,13 @@
           </p>
         </div>
 
-        <div class="row">
+        <div class="menu-item">
           <img src="img/m3.jpg" alt="main-product3" />
           <div class="menu-text">
-            <div class="menu-left">
+            <div class="menu-name">
               <h4>Con Carne</h4>
             </div>
-            <div class="menu-right">
+            <div class="menu-price">
               <h5>135 sek</h5>
             </div>
           </div>
@@ -194,13 +194,13 @@
           </p>
         </div>
 
-        <div class="row">
+        <div class="menu-item">
           <img src="img/m4.jpg" alt="main-product4" />
           <div class="menu-text">
-            <div class="menu-left">
+            <div class="menu-name">
               <h4>Pepperoni</h4>
             </div>
-            <div class="menu-right">
+            <div class="menu-price">
               <h5>135 sek</h5>
             </div>
           </div>
@@ -212,40 +212,46 @@
       </div>
     </section>
 
-    <!-- contact section -->
-
-    <section class="contact" id="contact">
-      <div class="main-contact">
-        <div class="contact-content">
+    <section class="contact-section" id="contact">
+      <div class="contact-wrapper">
+        <div class="contact-box">
           <h4>Services</h4>
-          <li><a href="#home">Hem</a></li>
-          <li><a href="#about">Om</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#contact">Kontakta</a></li>
+          <ul>
+            <li><a href="#home">Hem</a></li>
+            <li><a href="#about">Om</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Kontakta</a></li>
+          </ul>
         </div>
 
-        <div class="contact-content">
+        <div class="contact-box">
           <h4>leverans</h4>
-          <li><a href="#home">Uber Eats</a></li>
-          <li><a href="#about">foodora</a></li>
-          <li><a href="#menu">Wolt</a></li>
-          <li><a href="#contact">Bolt Food</a></li>
+          <ul>
+            <li><a href="#home">Uber Eats</a></li>
+            <li><a href="#about">foodora</a></li>
+            <li><a href="#menu">Wolt</a></li>
+            <li><a href="#contact">Bolt Food</a></li>
+          </ul>
         </div>
 
-        <div class="contact-content">
+        <div class="contact-box">
           <h4>Kontakta</h4>
-          <li><a href="#home">Kontakta oss</a></li>
-          <li><a href="#about">Presscenter</a></li>
-          <li><a href="#menu">Karriär</a></li>
-          <li><a href="#contact">FAQ</a></li>
+          <ul>
+            <li><a href="#home">Kontakta oss</a></li>
+            <li><a href="#about">Presscenter</a></li>
+            <li><a href="#menu">Karriär</a></li>
+            <li><a href="#contact">FAQ</a></li>
+          </ul>
         </div>
 
-        <div class="contact-content">
+        <div class="contact-box">
           <h4>Följa oss</h4>
-          <li><a href="#home">TikTok</a></li>
-          <li><a href="#about">Twitter</a></li>
-          <li><a href="#menu">Facebook</a></li>
-          <li><a href="#menu">Instagramm</a></li>
+          <ul>
+            <li><a href="#home">TikTok</a></li>
+            <li><a href="#about">Twitter</a></li>
+            <li><a href="#menu">Facebook</a></li>
+            <li><a href="#menu">Instagramm</a></li>
+          </ul>
         </div>
       </div>
     </section>
