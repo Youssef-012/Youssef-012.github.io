@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WaveSound Wireless Headphones</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <h1>WaveSound Wireless Headphones</h1>
+        <p>Experience true freedom. Crystal clear sound. All day comfort.</p>
+        <button id="buyBtn">Buy Now</button>
+      </div>
+    </header>
+
+    <section class="features">
+      <div class="container">
+        <h2>Why You'll Love WaveSound</h2>
+        <div class="feature-list">
+          <div class="feature">
+            <!-- Wireless SVG icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="#1a9c38"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 3C7.03 3 2.61 5.69 0 9.64l2.14 1.92A8.912 8.912 0 0112 6c2.39 0 4.57.99 6.13 2.6l2.15-1.93C17.23 4.42 14.76 3 12 3zM12 8a4 4 0 00-4 4 3.99 3.99 0 005.2 3.73l1.46-1.34A2 2 0 0112 10a2 2 0 010 4 3.99 3.99 0 01-2.68-1.05l-1.46 1.34A4 4 0 0012 16a4 4 0 004-4 4 4 0 00-4-4z"
+              />
+            </svg>
+            <h3>Completely Wireless</h3>
+            <p>
+              Freedom from tangled cords with reliable Bluetooth 5.0
+              connectivity.
+            </p>
+          </div>
+
+          <div class="feature">
+            <img
+              src="https://img.icons8.com/ios-filled/50/1a9c38/battery.png"
+              alt="Battery Icon"
+            />
+            <h3>Long Battery Life</h3>
+            <p>Up to 24 hours of uninterrupted playtime on a single charge.</p>
+          </div>
+
+          <div class="feature">
+            <!-- Active Noise Cancelling SVG icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="#1a9c38"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 6v12a2 2 0 01-2 2h-1v-2h1V6h-1V4h1a2 2 0 012 2zm-4-4H8a2 2 0 00-2 2v14a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2zM9 18v-6h6v6H9z"
+              />
+            </svg>
+            <h3>Active Noise Cancelling</h3>
+            <p>Block out distractions and immerse yourself in your music.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery container">
+      <h2>Gallery</h2>
+      <div class="gallery-images">
+        <img src="Headphones.png" alt="Headphones 1" />
+        <img src="Headphones.png" alt="Headphones 2" />
+        <img src="Headphones.png" alt="Headphones 3" />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 WaveSound. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById("buyBtn").addEventListener("click", () => {
+        document
+          .querySelector(".features")
+          .scrollIntoView({ behavior: "smooth" });
+      });
+    </script>
+  </body>
+</html>
